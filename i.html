@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- My CSS -->
+    
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+ <title>Media Design Force</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <!-- my font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  a:hover {
+      text-decoration: none;
+  }
+  
+  li {
+      list-style: none;
+  }
+  body {
+      font-family: 'Inter', sans-serif;
+  }
+  .heading-panel h2 {
+      color: #222;
+      font-size: 28px;
+      font-weight: 610;
+      padding-bottom: 20px;
+      position: relative;
+      text-transform: capitalize;   
+  }
+  .heading-panel h2  span{
+      color: #009bd7;    
+  }
+  .heading-panel h2::before {
+      background-color: #242424;
+      bottom: 6px;
+      content: "";
+      height: 1.2px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 40px;
+  }
+  .heading-panel h2::after {
+      background-color: #009bd7 !important;
+      /* background-color: #242424; */
+      bottom: 0;
+      content: "";
+      height: 1.2px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 90px;
+  }
+  .heading-text {
+      display: inline-block;
+      color: #777;
+      line-height: 26px;
+      width: 50%;
+      margin-top: 20px;
+  }
+  .card{
+      justify-content: center !important;
+      height: 16.5rem;
+      margin-bottom: 20px;
+      border: none !important;
+  background: linear-gradient(#ffffff 50%, hwb(217deg 45% 4%) 50%) !important;
+      background-size: 100% 200%;
+      background-position: 0 2.5% !important;
+      background-position-x: 0px;
+      background-position-y: 2.5%;cursor: pointer;
+      transition: 0.5s;
+      }
+  
+  
+      .card:hover {
+      background-position: 0 100% !important; 
+  }
+  .card:hover .card-title{color: #ffffff;}
+  .card:hover .card-text {
+      color: #efefef;
+  }
+  .card:hover{
+      box-shadow: 0px 14px 50px 3px rgba(0, 0, 0, 0.07);
+  }
+  .card img{
+      margin: 32px 0 0px;
+      justify-self: center;
+     width: 65px; 
+     height:70px;
+  }
+  .card .card-title {
+      font-size: 1rem !important;
+      font-weight: 650 !important;
+      color: #4b4b4b ;
+  }
+  .card-text {
+      color: #9b9b9b;
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 24px;
+      font-size: 14px;
+  }
+  
+  </style>
+
+<body>
+    <section class="custom-padding prop-how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="heading-panel">
+                    <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+                        <!-- Main Title -->
+                        <h2>What we <span class="heading-color">Provide</span></h2>
+                        <!-- Short Description -->
+                        <p class="heading-text">All your property solutions in one place. We’ll help you find a place
+                            you’ll love.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="row pt-4">
+                <div class="text-center col-xxl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-block m-auto">
+                    <div class="card" id="serv_card">
+                        <img src="https://barabikri.com/wp-content/uploads/2019/01/house-2-1.png" alt="Sell Properties"
+                            class=" img-fluid mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Sell Properties</h5>
+                           
+                        </div>
+                    </div>
+                </div>
+
+          
+
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <br><br>
+    <br><br>
+</body>
+
+</html>
