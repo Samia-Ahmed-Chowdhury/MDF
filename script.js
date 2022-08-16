@@ -63,17 +63,3 @@ valueDisplays.forEach((valueDisplay) => {
 });
 
 
-//work_card
-
-
-document.getElementById("work_card").onmouseover = function() {mouseOver()};
-document.getElementById("work_card").onmouseout = function() {mouseOut()};
-
-function mouseOver() {
-   
-  document.getElementById("work_card").style.color = "red";
-}
-
-function mouseOut() {
-  document.getElementById("work_card").style.color = "black";
-}
