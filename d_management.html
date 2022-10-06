@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Copy Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,700&family=Titan+One&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,700&family=Titan+One&family=Yellowtail&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- -------------------------  navbar   ------------------------- -->
+    <section id="d_mangement_hero" class="d_mangement_hero">
+
+        <nav class="navbar navbar-expand-lg py-1">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="img-fluid"></a>
+                </div>
+                <button class="navbar-toggler" type="button" id="navbar-toggler">
+                    <label>
+                        <input class="toggle_btn" type="checkbox" id="toggle_btn" onclick="show()">
+                        <div class="toggle">
+                            <span class="top_line common"></span>
+                            <span class="mid_line common"></span>
+                            <span class="end_line common"></span>
+                        </div>
+                    </label>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Driver management</a></li>
+                                <li><a class="dropdown-item" href="#">Fleet management</a></li>
+                                <li><a class="dropdown-item" href="#">Scheduling</a></li>
+                                <li><a class="dropdown-item" href="#">Payroll</a></li>
+                                <li><a class="dropdown-item" href="#">Complianxe</a></li>
+                                <li><a class="dropdown-item" href="#">Driver app</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <div class="btn">
+                            <a class="nav-link" href="#">
+                                <button type="btn" class="nav_btn">Book a demo</button>
+                            </a>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ---------mbl nav-------------- -->
+            <div class="slide" id="slide">
+                <ul class="navbar-nav  me-auto mb-lg-0 m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Driver management</a></li>
+                            <li><a class="dropdown-item" href="#">Fleet management</a></li>
+                            <li><a class="dropdown-item" href="#">Scheduling</a></li>
+                            <li><a class="dropdown-item" href="#">Payroll</a></li>
+                            <li><a class="dropdown-item" href="#">Complianxe</a></li>
+                            <li><a class="dropdown-item" href="#">Driver app</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <div class="btn">
+                        <a class="nav-link" href="#">
+                            <button type="btn" class="nav_btn">Book a demo</button>
+                        </a>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- ------------------------- END  navbar   ------------------------- -->
+        <!-- ------------------------- d_mangement_hero section   ------------------------- -->
+        <div class="bg">
+            <div class="container py-5 ">
+                <div class="row py-5">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10  m-auto ">
+                        <h3>Driver management</h3>
+                        <h1>Effortlessly onboard, offboard...
+                            and everything in between</h1>
+                        <div class="h-btn pt-2">
+                            <a href="#">
+                                <button class="hero-btn" href="#">Book a demo</button></a>
+                               </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------- end d_mangement_hero section   ------------------------- -->
+    <!-- -------------------------d_mangement part-2 section   ------------------------- -->
+    <section className="dm2_section ">
+        <div className="container ">
+            <div className="row dm2">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+                    <p>During peak, driver numbers increase rapidly. Can you quickly and effectively onboard those drivers, ensuring they are compliant at all times? Are you still managing details and documents in folders on your desktop or using a disconnected 3rd party platform?
+                    </p>
+                    <h5>With UniQore's driver profiles you can effortlessly onboard, offboard... and everything in between.</h5>
+                    <h6>Book a demo <KeyboardArrowRightIcon className='arrow' /></h6>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+                    <div className="dm2_img">
+                        <img src="images/ManagerDrivers.svg" className=" img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------- endd_mangement part-2 section   ------------------------- -->
+    <!-- -------------------------  features section   ------------------------- -->
+  <section class="vdo_section">
+    <div class="container">
+        <div class="row py-5">
+            <div class="details_box col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 m-auto">
+
+                <h3>&ldquo;Game-changing software for couriers...&rdquo; </h3>
+                <p>&ldquo;The UniQore system is a real game changer for our business.
+                    I had been searching for software that combines fleet management with
+                    driver safety and compliance for years, with very little that the
+                    marketplace could offer.&rdquo;
+                </p>
+                <h4>Alan Connell, Managing Director, Go Green Deliveries</h4>
+
+                <div class="details_img col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2 m-auto">
+                    <img src="images/Go-Green-1.svg" class="img-fluid">
+                </div>
+                <h5>More testimonials</h5>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- ------------- -->
+<section className="dm4_section ">
+    <div className="container ">
+        <h2>Managing your drivers doesn&rsquo;t need to be painful</h2>
+        <div className="row my-4">
+            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end">
+                <img src="images/Drivers_isolated-1.svg" className="dm4_img img-fluid" />
+            </div>
+            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+
+                <ul>
+                    <h5> Driver Management features at a glance</h5>
+                    <li>Driver onboarding &amp; offboarding</li>
+                    <li>Document upload &amp; tagging</li>
+                    <li>E-signature functionality</li>
+                    <li>Document compliance monitoring</li>
+                    <li>Personal detail database</li>
+                    <li>Driver DVLA automated check</li>
+                    <li>Driver/vehicle allocation history</li>
+                    <li>Driver/vehicle inspection history</li>
+                    <p>Book a demo <KeyboardArrowRightIcon className='arrow' /></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- -------------------------  CTA section   ------------------------- -->
+    
+<section class="cta my-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-10  m-auto">
+                    <h2>Just one solution does it all</h3>
+                        <p>A purpose-built platform, solely for the logistics community. Ready to focus on growing your
+                            business?</p>
+                        <div class="pt-2">
+                            <a href="#">
+                                <button class="cta-btn1" href="#">Book a live demo</button></a>
+                            <a href="#">
+                                <button class="cta-btn2" href="#">I'm ready to get started</button></a>
+                        </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 m-auto">
+                    <div>
+                        <img src="images/cta_img.png" class="sp_img img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------- end CTA section   ------------------------- -->
+
+    <!-- -------------------------  footer section   ------------------------- -->
+    <section class="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10 col-10  m-auto">
+                    <div class="log">
+                        <img src="images/log.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-10  m-auto">
+                    <div>
+                        <form>
+                            <input type="text" placeholder="Enter your email to join our mailing list"
+                                required="required" aria-required="true">
+                            <button type="submit" class="submit-btn">
+                                Yes, please <i class="fa fa-solid fa-angle-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row py-5">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 d-flex m-auto">
+                    <p>Follow Us :</p>
+                    <img src="images/fb.svg" class="img-fluid">
+                    <img src="images/linkdin.svg" class="img-fluid">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10  m-auto">
+                    <h6>&copy; 2022 TechQore All Rights Reserved</h6>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ------------------------- end footer section   ------------------------- -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
